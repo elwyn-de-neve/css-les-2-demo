@@ -2,35 +2,38 @@
 
 /*////////////////////////
     Table of Contents
-
     1. Global Styles
     2. Typography
     3. Layout
         3.1 Reusables
         3.2 Other
-    4. Components
-        4.1 Button
-        4.2 Input
-        4.3 Icon
+    4. Areas
+        4.1 Header
+        4.2 Main
+        4.3 Footer
+    5. Media Queries
 ////////////////////////*/
 
-/*////////////////////////
-    1. Global Styles
-////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////
+                                1. Global Styles
+/////////////////////////////////////////////////////////////////////////////////////*/
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
 :root {
-    --primary-color: #DCBF85; /* >>> Hoofdstuk 9.3 <<< */
-    --secondary-color: #60594d;
+    --primary-color: rgba(0, 100, 178, 0.5); /* >>> Hoofdstuk 9.3 <<< */
+    --secondary-color: #ececec;
+    --default-radius: 3px;
 }
 
-/*////////////////////////
-    2. Typography
-////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////
+                                2. Typography
+/////////////////////////////////////////////////////////////////////////////////////*/
 
 h1,
 h2,
@@ -49,39 +52,77 @@ p {
     font-family: Poppins, sans-serif;
 }
 
-/*////////////////////////
-    3. Layout
-////////////////////////*/
 
-/* ====== 3.1 Reusables === */
-.column {
+/*/////////////////////////////////////////////////////////////////////////////////////
+                                3. Layout
+/////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////// 3.1 Reusables /////////////////*/
+
+.flex-column {
     display: flex;
     flex-direction: column;
 }
 
-.row {
+.flex-row {
     display: flex;
     flex-direction: row;
 }
 
-/* ====== 3.2 Other ======= */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: var(--default-radius);
+    padding: 5px 10px;
+    border: none;
+}
 
-/*////////////////////////
-    4. Components
-////////////////////////*/
+/*///////////////// 3.2 Other /////////////////////*/
 
-/* ====== 4.1 Button ====== */
-.btb-cta {
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: gray;
-    padding: 1rem 3rem;
-    margin: 1em 2em;
+div {
+    /* Display */
+    display: inherit;
+    flex-direction: inherit;
+
+    /* Positioning */
+    position: inherit;
+    left: inherit;
+    right: inherit;
+    z-index: inherit;
+
+    /* Box-model */
+    max-width: inherit;
+    height: inherit;
+    margin: inherit;
+    padding: inherit;
+    background-color: inherit;
+
+    /* Typography */
+    font-family: inherit;
+    font-size: inherit;
+
+    /* Manipulation */
+    transform: inherit;
+    filter: inherit;
+    opacity: inherit;
+
+    /* Miscellaneous */
+    border-radius: inherit;
+    box-shadow: inherit;
 }
 
 
-/* ====== 4.2 Input ======= */
+/*/////////////////////////////////////////////////////////////////////////////////////
+                                4. Areas
+/////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////// 4.1 header ////////////////////*/
+
+/*///////////////// 4.2 main //////////////////////*/
+
+/*///////////////// 4.3 footer ////////////////////*/
 
 
-
-/* ====== 4.3 Icon ======== */
+/*/////////////////////////////////////////////////////////////////////////////////////
+                                5. Media Queries
+/////////////////////////////////////////////////////////////////////////////////////*/

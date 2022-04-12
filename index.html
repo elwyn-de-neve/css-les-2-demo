@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles.css">
+<!--    <link rel="stylesheet" href="./advanced-styles.css">-->
     <title>Title</title>
 </head>
 <body>
@@ -11,44 +12,51 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
 
 <!------------------- 2. class selector ------------------>
-<p class="default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, nesciunt?</p>
+<p class="default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
 
 <!------------------- 3. id selector (with class) -------->
-<p class="default" id="priority">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, praesentium.</p>
+<p class="default" id="priority">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
 
 <!------------------- 4. multiple class selector --------->
-<p class="default center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ut.</p>
+<p class="default center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
 
-<!------------------- 5. child selector ------------------>
-<div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, repudiandae?</p>
-</div>
-
-<!------------------- 6. descendant selector ------------->
+<!------------------- 5. descendant selector ------------->
 <header>
     <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, harum!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
     </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
 </header>
 
-<!------------------- 7. box model ----------------------->
+<!------------------- 6. child selector ------------------>
+<div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
+</div>
 
-<div class="box-model">Content here</div> <!--Bekijk via Google Development Tool (inspector) -->
+<!------------------- 7. adjacent sibling selector ------------->
+<button class="btn-primary">Verzenden</button>
+<button>Annuleren</button>
 
-<!------------------- 8. pro tip ------------------------->
+<!------------------- 8. general selector ------------->
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
 
-<!--.container-->
+<!------------------- 9. box model ----------------------->
+<!--Bekijk via Google Development Tool (inspector) -->
+<div class="box-model">Content here</div>
 
-<!--header.container-->
+<!------------------- 9. position relative ----------------------->
+<!--<div>
+    <p class="box-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
+    <p class="box-1 relative">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
+    <p class="box-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
+</div>-->
 
-<!--header.container>nav#navbar>ul.list>li.list-item*4>a{home}-->
-
-<!------------------- 9. flexbox ------------------------->
-
-<div class="flex-container">
-    <div class="flex-item first">1</div>
-    <div class="flex-item second">2</div>
-    <div class="flex-item third">3</div>
+<!------------------- 10. position absolute ----------------------->
+<div class="relative">
+    <p class="box-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
+    <p class="box-2 absolute">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
+    <p class="box-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
 </div>
 
 </body>
